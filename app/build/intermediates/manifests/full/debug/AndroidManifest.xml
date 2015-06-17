@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="my.utm.rmc.p2eer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="my.utm.rmc.p2eer.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="my.utm.rmc.p2eer.Activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="my.utm.rmc.p2eer.Activity.ExpandableListItemActivity" />
+        <activity android:name="my.utm.rmc.p2eer.Activity.Description" />
+        <activity android:name="my.utm.rmc.p2eer.Activity.Panduan" />
+        <activity android:name="my.utm.rmc.p2eer.Activity.BaseActivity" />
+        <activity android:name="my.utm.rmc.p2eer.Activity.MylistActivity" />
+        <activity android:name="my.utm.rmc.p2eer.Activity.ItemDataActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,156 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:ignore="overdraw">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal">
+    <TextView
+        android:id="@+id/grant_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#ffcdcdcd"
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="50dp" />
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/grant_title"
+            android:text="DEFINITION"
+            android:id="@+id/definitiontitle"
+            android:textSize="@dimen/title"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/definitiontitle"
+            android:layout_height="wrap_content"
+            android:id="@+id/definition"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/definition"
+            android:text="REQUIREMENT"
+            android:id="@+id/requirementtitle"
+            android:textSize="@dimen/title"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/requirementtitle"
+            android:layout_height="wrap_content"
+            android:id="@+id/requirement"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/requirement"
+            android:text="MAXIMUM DURATION"
+            android:id="@+id/durationtitle"
+            android:textSize="@dimen/title"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/durationtitle"
+            android:layout_height="wrap_content"
+            android:id="@+id/duration"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/duration"
+            android:text="PERUNTUKAN MAKSIMA &amp; CAPPING V-SIRI"
+            android:id="@+id/peruntukantitle"
+            android:textSize="@dimen/title"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/peruntukantitle"
+            android:layout_height="wrap_content"
+            android:id="@+id/allocation"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/allocation"
+            android:text="KPI"
+            android:id="@+id/kpititle"
+            android:textSize="@dimen/title"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/kpititle"
+            android:layout_height="wrap_content"
+            android:id="@+id/kpi"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kpi"
+            android:text="CARA MEMOHON"
+            android:id="@+id/howtotitle"
+            android:textSize="@dimen/title"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/howtotitle"
+            android:layout_height="wrap_content"
+            android:id="@+id/howto"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/howto"
+            android:text="KAEDAH PENILAIAN"
+            android:id="@+id/evaluateTitle"
+            android:textSize="@dimen/title"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/evaluateTitle"
+            android:layout_height="wrap_content"
+            android:id="@+id/evaluation"
+            android:layout_gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

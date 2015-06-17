@@ -1,0 +1,1 @@
+include ':app', ':lib-core', ':lib-manipulation', ':lib-core-slh', ':nineoldandroids-2.4.0'

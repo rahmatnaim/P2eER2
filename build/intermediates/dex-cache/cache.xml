@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Administrator\Documents\Android Project\P2eER\lib-core-slh\listviewanimations_lib-core-slh_3.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a4fe703aabd23e8c287c90396514418119109dd1">
+        <dex dex="C:\Users\Administrator\Documents\Android Project\P2eER\app\build\intermediates\pre-dexed\debug\listviewanimations_lib-core-slh_3.1.0-9a5f726e8ec8aa811c80bb8f730105774ea566e5.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Documents\Android Project\P2eER\lib-manipulation\listviewanimations_lib-manipulation_3.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="63737e512fcd9e0ebe9bcd0bb375c2dded74116f">
+        <dex dex="C:\Users\Administrator\Documents\Android Project\P2eER\app\build\intermediates\pre-dexed\debug\listviewanimations_lib-manipulation_3.1.0-d33ae5871e6f3da0b5671e47c51acc79d39d79b8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Documents\Android Project\P2eER\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\Administrator\Documents\Android Project\P2eER\app\build\intermediates\pre-dexed\debug\classes-61e3d152b0e39e4aaff3d3f25dd218af9185002c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Documents\Android Project\P2eER\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\Administrator\Documents\Android Project\P2eER\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-c16f327c73259bb2767a3af7070851bbd4df02c8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Documents\Android Project\P2eER\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\Administrator\Documents\Android Project\P2eER\app\build\intermediates\pre-dexed\debug\classes-22fd37941772465ed17d2620e308102ee3d51fa7.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Documents\Android Project\P2eER\app\libs\volley.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="C:\Users\Administrator\Documents\Android Project\P2eER\app\build\intermediates\pre-dexed\debug\volley-02cc7d0bbd6bacc055ea5fb3bb4e860719f57f14.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\Administrator\Documents\Android Project\P2eER\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-b02d5f0bbb77641e1684f83d7fa0b9acc540cbd4.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Documents\Android Project\P2eER\lib-core\listviewanimations_lib-core_3.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f3f9629b068554d8513a2aaf34418171bf430851">
+        <dex dex="C:\Users\Administrator\Documents\Android Project\P2eER\app\build\intermediates\pre-dexed\debug\listviewanimations_lib-core_3.1.0-314ee367f12c0f4794466920672df0f09a99b817.jar" />
+    </item>
+
+</items>
