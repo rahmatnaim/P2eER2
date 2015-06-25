@@ -10,15 +10,15 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_gravity="center_horizontal">
-    <TextView
-        android:id="@+id/grant_title"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:background="#ffcdcdcd"
-        android:textSize="@dimen/title"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginBottom="50dp" />
+        <TextView
+            android:id="@+id/grant_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#ffcdcdcd"
+            android:textSize="@dimen/title"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="50dp" />
 
 
 
@@ -26,8 +26,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/grant_title"
-            android:text="DEFINITION"
-            android:id="@+id/definitiontitle"
+            android:text="LAPORAN PERKEMBANGAN"
+            android:id="@+id/perkembangantitle"
             android:textSize="@dimen/title"
             android:layout_gravity="center_horizontal"
             android:background="@android:color/darker_gray"
@@ -35,17 +35,17 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_below="@+id/definitiontitle"
+            android:layout_below="@+id/perkembangantitle"
             android:layout_height="wrap_content"
-            android:id="@+id/definition"
+            android:id="@+id/perkembangan"
             android:layout_gravity="center_horizontal" />
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/definition"
-            android:text="REQUIREMENT"
-            android:id="@+id/requirementtitle"
+            android:layout_below="@id/perkembangan"
+            android:text="LAPORAN AKHIR"
+            android:id="@+id/akhirtitle"
             android:textSize="@dimen/title"
             android:layout_gravity="center_horizontal"
             android:background="@android:color/darker_gray"
@@ -53,17 +53,17 @@
             android:layout_marginTop="20dp" />
         <TextView
             android:layout_width="match_parent"
-            android:layout_below="@+id/requirementtitle"
+            android:layout_below="@+id/akhirtitle"
             android:layout_height="wrap_content"
-            android:id="@+id/requirement"
+            android:id="@+id/akhir"
             android:layout_gravity="center_horizontal" />
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/requirement"
-            android:text="MAXIMUM DURATION"
-            android:id="@+id/durationtitle"
+            android:layout_below="@id/akhir"
+            android:text="MAXIMUM PINDAHAN V-SIRI"
+            android:id="@+id/vsirititle"
             android:textSize="@dimen/title"
             android:layout_gravity="center_horizontal"
             android:background="@android:color/darker_gray"
@@ -71,16 +71,16 @@
             android:layout_marginTop="20dp" />
         <TextView
             android:layout_width="match_parent"
-            android:layout_below="@+id/durationtitle"
+            android:layout_below="@+id/vsirititle"
             android:layout_height="wrap_content"
-            android:id="@+id/duration"
+            android:id="@+id/vsiri"
             android:layout_gravity="center_horizontal" />
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/duration"
-            android:text="PERUNTUKAN MAKSIMA &amp; CAPPING V-SIRI"
+            android:layout_below="@id/vsiri"
+            android:text="PENYALURAN PERUNTUKAN TAHUN KEDUA"
             android:id="@+id/peruntukantitle"
             android:textSize="@dimen/title"
             android:layout_gravity="center_horizontal"
@@ -98,8 +98,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/allocation"
-            android:text="KPI"
-            android:id="@+id/kpititle"
+            android:text="PERLANJUTAN TEMPOH"
+            android:id="@+id/tempohtitle"
             android:textSize="@dimen/title"
             android:layout_gravity="center_horizontal"
             android:background="@android:color/darker_gray"
@@ -107,16 +107,16 @@
             android:layout_marginTop="20dp" />
         <TextView
             android:layout_width="match_parent"
-            android:layout_below="@+id/kpititle"
+            android:layout_below="@+id/tempohtitle"
             android:layout_height="wrap_content"
-            android:id="@+id/kpi"
+            android:id="@+id/tempoh"
             android:layout_gravity="center_horizontal" />
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/kpi"
-            android:text="CARA MEMOHON"
+            android:layout_below="@id/tempoh"
+            android:text="KAEDAH PEMANTAUAN"
             android:id="@+id/howtotitle"
             android:textSize="@dimen/title"
             android:layout_gravity="center_horizontal"
@@ -127,30 +127,9 @@
             android:layout_width="match_parent"
             android:layout_below="@+id/howtotitle"
             android:layout_height="wrap_content"
-            android:id="@+id/howto"
-            android:layout_gravity="center_horizontal" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/howto"
-            android:text="KAEDAH PENILAIAN"
-            android:id="@+id/evaluateTitle"
-            android:textSize="@dimen/title"
-            android:layout_gravity="center_horizontal"
-            android:background="@android:color/darker_gray"
-            android:gravity="center"
-            android:layout_marginTop="20dp" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_below="@+id/evaluateTitle"
-            android:layout_height="wrap_content"
-            android:id="@+id/evaluation"
+            android:id="@+id/method"
             android:layout_gravity="center_horizontal" />
 
     </RelativeLayout>
 
-
-
-
-</ScrollView><!-- From: file:/C:/Users/Administrator/Documents/Android%20Project/P2eER/app/src/main/res/layout/description_proposal.xml -->
+</ScrollView>

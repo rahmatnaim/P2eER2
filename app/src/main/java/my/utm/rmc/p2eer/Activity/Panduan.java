@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import my.utm.rmc.p2eer.MyExpandableListItemAdapter;
 import my.utm.rmc.p2eer.R;
 
 /**
@@ -13,23 +12,14 @@ import my.utm.rmc.p2eer.R;
 public class Panduan extends MylistActivity {
 
     private static final int INITIAL_DELAY_MILLIS = 500;
-    private MyExpandableListItemAdapter mExpandableListAdItemAdapter;
     private boolean mLimited;
     private ListView mListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//
-//        mExpandableListAdItemAdapter = new MyExpandableListItemAdapter(this);
-//        AlphaInAnimationAdapter alphaInAnimationAdapter = new AlphaInAnimationAdapter(mExpandableListAdItemAdapter);
-//        alphaInAnimationAdapter.setAbsListView(mListView);
-//
-//        assert alphaInAnimationAdapter.getViewAnimator() != null;
-//        alphaInAnimationAdapter.getViewAnimator().setInitialDelayMillis(INITIAL_DELAY_MILLIS);
-//
-//        mListView.setAdapter(alphaInAnimationAdapter);
-        setContentView(R.layout.description_proposal);
+
+        setContentView(R.layout.desc_proposal);
         String title = getIntent().getExtras().getString("title");
         String definition = getIntent().getExtras().getString("definition").replaceAll("\\\\n", "\n");
         String requirement = getIntent().getExtras().getString("requirement").replaceAll("\\\\n", "\n");

@@ -1,0 +1,101 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:ignore="overdraw">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/grant_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#ffcdcdcd"
+            android:textSize="@dimen/title"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="50dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="SYARAT UMUM"
+            android:textSize="@dimen/title"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/syaratumum"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="PERLANTIKAN"
+            android:textSize="@dimen/title"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/perlantikan"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="KADAR"
+            android:textSize="@dimen/title"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kadar"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="SUMBER PEMBIAYAAN"
+            android:textSize="@dimen/title"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pembiayaan"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="RUJUKAN"
+            android:textSize="@dimen/title"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rujukan"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</ScrollView>

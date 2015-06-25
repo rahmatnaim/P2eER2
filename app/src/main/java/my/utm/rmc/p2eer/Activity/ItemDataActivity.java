@@ -14,7 +14,7 @@ public class ItemDataActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_guide_item);
+        setContentView(R.layout.list_grant);
     }
 
     public void onExpandListItemAdapterClicked(final View view) {

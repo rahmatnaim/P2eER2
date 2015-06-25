@@ -1,0 +1,364 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:ignore="overdraw">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:id="@+id/grant_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#ffcdcdcd"
+            android:textSize="@dimen/title"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="50dp" />
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/grant_title"
+            android:text="SYARAT UMUM"
+            android:id="@+id/syaratumumtitle"
+            android:textSize="@dimen/title"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/syaratumumtitle"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/definition"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#ffaddaff" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/definition"
+            android:text="LUAR NEGARA"
+            android:id="@+id/requirementtitle"
+            android:textSize="@dimen/title"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+
+
+        <LinearLayout
+            android:id="@+id/tableOs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/requirementtitle"
+            android:layout_alignParentEnd="false"
+            android:weightSum="2"
+            android:paddingTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layoutSwitch1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/requirementtitle"
+                android:layout_alignParentEnd="false"
+                android:weightSum="2"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/bengkel"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bengkeltitle"
+                        android:text="Bengkel K/Kerja"
+                        android:gravity="center"
+                        android:background="#ffffb98a" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bengkeldesc" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ff000000"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/meeting"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/bengkel"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mesyuarat / Seminar"
+                        android:id="@+id/meetingtitle"
+                        android:background="#ffffb98a"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/meetingdesc" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutSwitch2"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/bengkel2"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bengkel K/Kerja"
+                            android:gravity="center"
+                            android:background="#ffffb98a" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mesyuarat / Seminar"
+                            android:background="#ffffb98a"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/fulldesc"
+                    android:gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="DALAM NEGARA"
+            android:id="@+id/durationtitle"
+            android:textSize="@dimen/title"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tableOs" />
+
+        <LinearLayout
+            android:layout_below="@+id/durationtitle"
+            android:id="@+id/duration"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/requirementtitle"
+                android:layout_alignParentEnd="false"
+                android:weightSum="2"
+                android:paddingTop="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/layoutSwitch3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/requirementtitle"
+                    android:layout_alignParentEnd="false"
+                    android:weightSum="2"
+                    android:paddingTop="10dp" >
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView"
+                            android:text="Bengkel K/Kerja"
+                            android:gravity="center"
+                            android:background="#ffffb98a" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/bengkellocdesc" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#ff000000" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/linearLayout"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mesyuarat / Seminar"
+                            android:id="@+id/textView3"
+                            android:background="#ffffb98a"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/meetinglocdesc" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutSwitch4"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout4"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bengkel K/Kerja"
+                                android:gravity="center"
+                                android:background="#ffffb98a" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Mesyuarat / Seminar"
+                                android:background="#ffffb98a"
+                                android:gravity="center" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/descriptionAll"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/duration"
+            android:text="SUMBER PEMBIAYAAN"
+            android:id="@+id/peruntukantitle"
+            android:textSize="@dimen/title"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/peruntukantitle"
+            android:layout_height="wrap_content"
+            android:id="@+id/allocation"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/allocation"
+            android:text="SUMBER RUJUKAN"
+            android:id="@+id/kpititle"
+            android:textSize="@dimen/title"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/kpititle"
+            android:layout_height="wrap_content"
+            android:id="@+id/rujukan"
+            android:layout_gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

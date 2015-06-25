@@ -31,6 +31,9 @@
         <activity android:name="my.utm.rmc.p2eer.Activity.BaseActivity" />
         <activity android:name="my.utm.rmc.p2eer.Activity.MylistActivity" />
         <activity android:name="my.utm.rmc.p2eer.Activity.ItemDataActivity" />
+        <activity android:name="my.utm.rmc.p2eer.Activity.PanduanAktiviti" />
+        <activity android:name="my.utm.rmc.p2eer.Activity.PanduanPemantauan" />
+        <activity android:name="my.utm.rmc.p2eer.Activity.PanduanPerlantikan" />
     </application>
 
 </manifest>

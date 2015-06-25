@@ -1,4 +1,4 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,16 +8,18 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:clipToPadding="false"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:padding="4dp"
-        android:scrollbarStyle="outsideOverlay">
+        android:scrollbarStyle="outsideOverlay"
+        android:weightSum="4">
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="141dp"
+            android:layout_weight="1"
             android:layout_marginBottom="4dp"
             android:foreground="?android:attr/selectableItemBackground"
             android:onClick="onPanduanClicked">
@@ -49,10 +51,11 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="141dp"
+            android:layout_weight="1"
             android:layout_marginBottom="4dp"
             android:foreground="?android:attr/selectableItemBackground"
-            android:onClick="onExpandListItemAdapterClicked">
+            android:onClick="onAktivityClicked">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -65,6 +68,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/red_transparent"
+                android:id="@+id/frameactivity"
                 android:padding="12dp">
 
                 <TextView
@@ -80,10 +84,11 @@
         </FrameLayout>
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="141dp"
+            android:layout_weight="1"
             android:layout_marginBottom="4dp"
             android:foreground="?android:attr/selectableItemBackground"
-            android:onClick="onExpandListItemAdapterClicked1">
+            android:onClick="onPerlantikanClicked">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -111,10 +116,11 @@
         </FrameLayout>
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="141dp"
+            android:layout_weight="1"
             android:layout_marginBottom="4dp"
             android:foreground="?android:attr/selectableItemBackground"
-            android:onClick="onExpandListItemAdapterClicked">
+            android:onClick="onPemantauanClicked">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -141,4 +147,4 @@
             </FrameLayout>
         </FrameLayout>
     </LinearLayout>
-</ScrollView><!-- From: file:/C:/Users/Administrator/Documents/Android%20Project/P2eER/app/src/main/res/layout/list_detail.xml -->
+</LinearLayout>

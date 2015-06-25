@@ -14,13 +14,9 @@ import com.nhaarman.listviewanimations.ArrayAdapter;
  */
 public class MylistAdapter extends ArrayAdapter<String> {
 
-    private final Context mContext;
 
     public MylistAdapter(final Context context) {
-        mContext = context;
-        for (int i = 0; i < 1000; i++) {
-            add(mContext.getString(R.string.row_number, i));
-        }
+
     }
 
     @Override

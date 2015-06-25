@@ -1,10 +1,8 @@
 package my.utm.rmc.p2eer.Activity;
 
-import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -19,9 +17,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import my.utm.rmc.p2eer.AppController;
@@ -32,7 +28,7 @@ import my.utm.rmc.p2eer.R;
 /**
  * Created by rahmatnaim on 6/8/15.
  */
-public class ExpandableListItemActivity extends Activity {
+public class ExpandableListItemActivity extends MylistActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
 
@@ -44,7 +40,7 @@ public class ExpandableListItemActivity extends Activity {
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_guide_item);
+        setContentView(R.layout.list_grant);
         final ListView listView = (ListView) findViewById(R.id.list);
 
         //makejsonobjreq();
@@ -94,6 +90,13 @@ public class ExpandableListItemActivity extends Activity {
                                 guide.setEvaluation(obj.getString("evaluation"));
                                 guide.setCategory(obj.getString("category"));
                                 guide.setThumbnailUrl(obj.getString("thumbnail"));
+                                guide.setBengkelOs(obj.getString("bengkel_os"));
+                                guide.setMeetingOs(obj.getString("meeting_os"));
+                                guide.setBengkelLocal(obj.getString("bengkel_local"));
+                                guide.setMeetingLocal(obj.getString("meeting_local"));
+                                guide.setActivityFunding(obj.getString("activity_funding"));
+                                guide.setActivitySource(obj.getString("activity_source"));
+                                guide.setActivityUmum(obj.getString("activity_umum"));
 //                                guide.setRating(((Number) obj.get("rating"))
 //                                        .doubleValue());
 //                                guide.setYear(obj.getInt("releaseYear"));
@@ -146,6 +149,13 @@ public class ExpandableListItemActivity extends Activity {
                 i.putExtra("evaluation", guideList.get(position).getEvaluation());
                 i.putExtra("category", guideList.get(position).getCategory());
                 i.putExtra("thumbnail", guideList.get(position).getThumbnailUrl());
+                i.putExtra("bengkelOs", guideList.get(position).getBengkelOs());
+                i.putExtra("meetingOs", guideList.get(position).getMeetingOs());
+                i.putExtra("bengkelLocal", guideList.get(position).getBengkelLocal());
+                i.putExtra("meetingLocal", guideList.get(position).getMeetingLocal());
+                i.putExtra("activityFunding", guideList.get(position).getActivityFunding());
+                i.putExtra("activitySource", guideList.get(position).getActivitySource());
+                i.putExtra("activityUmum", guideList.get(position).getActivityUmum());
                 //i.putExtra("title", guideList.get(position).getTitle());
 //                ArrayList<Guide> guideArrayList = (ArrayList<Guide>) listView.getItemAtPosition(position);
 //                i.putExtra("type_of_grant", guideArrayList.get(getTitle()))

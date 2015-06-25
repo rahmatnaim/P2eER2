@@ -23,6 +23,9 @@
         <activity android:name=".Activity.BaseActivity"/>
         <activity android:name=".Activity.MylistActivity"/>
         <activity android:name=".Activity.ItemDataActivity"/>
+        <activity android:name=".Activity.PanduanAktiviti"/>
+        <activity android:name=".Activity.PanduanPemantauan"/>
+        <activity android:name=".Activity.PanduanPerlantikan"/>
 
     </application>
 

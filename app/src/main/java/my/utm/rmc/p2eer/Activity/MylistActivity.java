@@ -17,7 +17,7 @@ public class MylistActivity extends BaseActivity {
     @Override
     public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
-        setContentView(R.layout.description_proposal);
+        setContentView(R.layout.desc_proposal);
         mListView = (ListView) findViewById(R.id.activity_mylist_listview);
     }
 
