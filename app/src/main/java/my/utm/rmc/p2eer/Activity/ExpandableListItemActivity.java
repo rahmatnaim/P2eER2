@@ -42,6 +42,7 @@ public class ExpandableListItemActivity extends MylistActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_grant);
         final ListView listView = (ListView) findViewById(R.id.list);
+        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>> ENTER:ExpandableListItemActivity");
 
         //makejsonobjreq();
         adapter = new CustomListAdapter(this, guideList);
@@ -57,14 +58,15 @@ public class ExpandableListItemActivity extends MylistActivity {
 //                new ColorDrawable(Color.parseColor("#1b1b1b")));
 
 //         Creating volley request obj
+        System.out.println(getIntent().getExtras().getString("parameter"));
         if(getIntent().getExtras().getString("parameter").equals("GUP")) {
-            url = "http://161.139.30.13/radismob/get_gup_data.php";
+            url = "http://161.139.30.13/radismob/proposal/get_gup_data.php";
         } else if (getIntent().getExtras().getString("parameter").equals("MOSTI")) {
-            url = "http://161.139.30.13/radismob/get_mosti_data.php";
+            url = "http://161.139.30.13/radismob/proposal/get_mosti_data.php";
         } else if (getIntent().getExtras().getString("parameter").equals("KPM")) {
-            url = "http://161.139.30.13/radismob/get_kpm_data.php";
+            url = "http://161.139.30.13/radismob/proposal/get_kpm_data.php";
         } else if (getIntent().getExtras().getString("parameter").equals("OTHER")) {
-            url = "http://161.139.30.13/radismob/get_other_data.php";
+            url = "http://161.139.30.13/radismob/proposal/get_other_data.php";
         }
         final JsonArrayRequest guideReq = new JsonArrayRequest(url,
                 new Response.Listener<JSONArray>() {
@@ -97,6 +99,11 @@ public class ExpandableListItemActivity extends MylistActivity {
                                 guide.setActivityFunding(obj.getString("activity_funding"));
                                 guide.setActivitySource(obj.getString("activity_source"));
                                 guide.setActivityUmum(obj.getString("activity_umum"));
+                                guide.setUmum(obj.getString("permantauan_umum"));
+                                guide.setLantikan(obj.getString("lantikan"));
+                                guide.setKadar(obj.getString("kadar"));
+                                guide.setSumber(obj.getString("sumber"));
+                                guide.setRujukan(obj.getString("rujukan"));
 //                                guide.setRating(((Number) obj.get("rating"))
 //                                        .doubleValue());
 //                                guide.setYear(obj.getInt("releaseYear"));
@@ -156,6 +163,11 @@ public class ExpandableListItemActivity extends MylistActivity {
                 i.putExtra("activityFunding", guideList.get(position).getActivityFunding());
                 i.putExtra("activitySource", guideList.get(position).getActivitySource());
                 i.putExtra("activityUmum", guideList.get(position).getActivityUmum());
+                i.putExtra("permantauan_umum", guideList.get(position).getUmum());
+                i.putExtra("lantikan", guideList.get(position).getLantikan());
+                i.putExtra("kadar", guideList.get(position).getKadar());
+                i.putExtra("sumber", guideList.get(position).getSumber());
+                i.putExtra("rujukan", guideList.get(position).getRujukan());
                 //i.putExtra("title", guideList.get(position).getTitle());
 //                ArrayList<Guide> guideArrayList = (ArrayList<Guide>) listView.getItemAtPosition(position);
 //                i.putExtra("type_of_grant", guideArrayList.get(getTitle()))
