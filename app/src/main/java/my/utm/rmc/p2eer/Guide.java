@@ -28,6 +28,12 @@ public class Guide {
     private String saluranPantau;
     private String lanjutTempoh;
     private String methodPantau;
+    private String type;
+    private String umum;
+    private String lantikan;
+    private String kadar;
+    private String sumber;
+    private String rujukan;
 
     public Guide() { }
     public Guide(int pid, String title, String definition, String requirement, String period,
@@ -191,5 +197,57 @@ public class Guide {
     public void setReportDev(String reportDev) {
         this.reportDev = reportDev;
     }
+
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setUmum(String umum) {
+        this.umum = umum;
+    }
+
+    public String getUmum() {
+        return umum;
+    }
+
+    public void setLantikan(String lantikan) {
+        this.lantikan = lantikan;
+    }
+
+    public String getLantikan() {
+        return lantikan;
+    }
+
+    public void setKadar(String kadar) {
+        this.kadar = kadar;
+    }
+
+    public String getKadar() {
+        return kadar;
+    }
+
+    public void setSumber(String sumber) {
+        this.sumber = sumber;
+    }
+
+    public String getSumber() {
+        return sumber;
+    }
+
+    public void setRujukan(String rujukan) {
+        this.rujukan = rujukan;
+    }
+
+    public String getRujukan() {
+        return rujukan;
+    }
+
+
+
 }
 
